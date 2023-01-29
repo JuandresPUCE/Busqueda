@@ -2,7 +2,9 @@ def busquedaLineal(lista, elemento):
     print ("La lista es: ",lista )
     for indice in range(len(lista)):
         if lista[indice] == elemento:
-            return print("el indice es: ", indice)
+             print("El indice es: ")
+             return indice
+        
     return print("elemento no existe")
 
 
@@ -18,6 +20,7 @@ def busquedaBinaria(lista,elemento):
     while inicio<=fin:
         medio=(inicio+fin)//2
         if lista[medio] == elemento:
+            print("El indice es: ")
             return  medio
         elif lista[medio] < elemento:
             inicio=medio+1
@@ -27,6 +30,7 @@ def busquedaBinaria(lista,elemento):
     return -1
 # https://uniwebsidad.com/libros/algoritmos-python/capitulo-8/busqueda-binaria
 # https://www.aluracursos.com/blog/busqueda-binaria-implementar-python
+
 
 #Prueba de escritorio
 
